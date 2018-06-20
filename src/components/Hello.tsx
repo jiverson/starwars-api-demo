@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Button from '@material-ui/core/Button'
 import './Hello.css';
 
 export interface Props {
@@ -19,8 +20,8 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
         Hello {name + getExclamationMarks(enthusiasmLevel)}
       </div>
       <div>
-        <button onClick={onDecrement}>-</button>
-        <button onClick={onIncrement}>+</button>
+        <Button variant="contained" color="primary" onClick={onDecrement}>-</Button>
+        <Button variant="contained" color="primary" onClick={onIncrement}>+</Button>
       </div>
     </div>
   );

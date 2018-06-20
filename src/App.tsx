@@ -1,16 +1,15 @@
-import * as React from 'react';
-import './App.css';
-import Hello from './containers/Hello';
-import {Component} from 'react';
+import React, { Component } from 'react'
+import './App.css'
+import Discovery from './containers/Discovery'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Hello />
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <Discovery />
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
